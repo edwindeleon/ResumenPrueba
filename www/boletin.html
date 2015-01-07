@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resumen de Salud</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+	
+	<link href="css/jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css">
+    <link href="css/edgstyle.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
+    
+    <script language="JavaScript" type="text/JavaScript">
+   $(document).ready(function(){
+           jQuery.ajaxSetup({
+  beforeSend: function() {
+     $('#precarga').show();
+  },
+  complete: function(){
+     $('#precarga').hide();
+  },
+  success: function() {}
+
+});
+//$("#contenido-boletin").load('http://www.resumendesalud.com/do/norte/index.php/boletin-resumen-de-salud-app');
+
+  });
+           // $(document).ready(function(){
+            //    $("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
+            //    $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
+ // $("#precarga").hide();
+//});
+                     
+               
+         //   });
+
+
+        </script>
+         <script language="JavaScript" type="text/JavaScript">
+     $(document).ready(function(){
+$('a').live('tap',function(e){
+    // if external link then open a browser
+    if(String($(this).attr('href')).substring(0,4)=='http' || String($(this).attr('href')).substring(0,5)=='https'){
+        navigator.app.loadUrl($(this).attr('href'), { openExternal:true });
+        e.stopPropagation();
+        return false;
+    }
+});
+ function loadURL(url){
+    navigator.app.loadUrl(url, { openExternal:true });
+    return false;
+  });
+         
+
+
+        </script>
+</head>
+<body>
+
+<div data-role="page" id="boletin" data-url="boletin">
+
+	<div data-role="header">
+		<h1><div><img class="el-logo" src="images/logo.svg" width="121" height="36" alt="Resumen de Salud"></div>    
+           				<div class="menu-desplegable"> <a class="menu-icon" style="color: transparent;" href="#right-panel">&nbsp;&nbsp;&nbsp;</a></div></h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+    <a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_system', 'location=no');">enlace 1 a ver</a>
+    <br>
+    <a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_blank', 'location=no');">enlace 2 a ver</a>
+        <div id="precarga"><img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido</div>
+		<div id="contenido-boletin">
+        <!-- <iframe class="el-frame" src="http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app"></iframe> -->
+        </div>   
+
+	</div><!-- /content -->
+<!-- /panel -->
+    <div data-role="panel" id="right-panel" data-display="push" data-position="right">
+       <div class="bloques2">
+                         <div class="bloque21">
+                         <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="boletin.html" rel="external"><img src="images/resumen-de-hoy.png"> </a>
+                         </div>   
+                         <div class="bloque12">
+                         <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="prox-eventos.html" rel="external"><img src="images/proximos-eventos.png"> </a>
+                         </div>      
+                         <div class="bloque13">
+                         <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="eventos-realizados.html" rel="external"><img src="images/eventos-realizados.png"> </a>
+                         </div>
+                         <div class="bloque14">
+                         <a href="#redes" data-rel="popup" data-position-to="window"><img src="images/siguenos.png"> </a>
+                         </div>
+                         <div class="bloque15">
+                        <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="suscribirse.html" rel="external"><img src="images/suscribete.png"> </a>
+                         </div>
+                         <div class="bloque16">
+                         <a href="#recomiendanos" data-rel="popup" data-position-to="window"><img src="images/recomiendanos.png"></a> 
+                         </div>
+                         <div class="bloque17">
+                        <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="https://drive.google.com/file/d/0B3DCbX2HYOYATXVxMHdoc2p0TEk/view" rel="external"> <img src="images/calendario-farma.png"> </a>
+                         </div>
+                         <div class="bloque18">
+                          <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="publicidad.html" rel="external"><img src="images/publicidad.png"> </a>
+                         </div>
+                         <div class="bloque19">
+                         <a href="#enviar-noticia" data-rel="popup" data-position-to="window"><img src="images/enviar-noticia.png"> </a>
+                         </div>
+                         <div class="bloque20">
+                        <a href="#sugerencia" data-rel="popup" data-position-to="window"> <img src="images/sugerencias.png"> </a>
+                         </div>
+                    </div>          
+    </div><!-- /panel -->
+    <div data-role="popup" id="redes" class="ui-content" style="max-width:320px;background:#0061A0;">
+    <div class="info" style="background:#0061A0;margin:20px;">
+
+                <a href="https://www.facebook.com/ResumenDeSaludDo?ref=ts&fref=ts" target="_blank"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-fb.jpg" width="50" height="49" alt=""></a>
+                <a href="https://twitter.com/ResumendeSalud" target="_blank"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-tw.jpg" width="50" height="49" alt=""></a>
+                <a href="http://www.linkedin.com/company/5018984?trk=tyah&trkInfo=tas%3Aresumen%20de%20s%2Cidx%3A1-1-1" target="_blank"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-in.jpg" width="50" height="49" alt=""></a>
+                <a href="https://plus.google.com/u/0/105322601350047543232/posts" target="_blank"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-g.jpg" width="50" height="49" alt=""></a>
+
+                </div>
+    </div><!-- /popup redes -->
+    <div data-role="popup" id="recomiendanos" class="ui-content" style="max-width:85%; padding:20px">
+    <script language="JavaScript" type="text/JavaScript">
+            $(document).ready(function(){
+                
+                     $("#contenido-recomiendanos").load('http://www.resumendesalud.com/do/socialred/resumendesalud/recomiendanos.php');
+               
+            });
+        </script>
+        <div id="contenido-recomiendanos">
+        </div>
+    </div><!-- /popup recomiendanos -->
+        <div data-role="popup" id="enviar-noticia" class="ui-content" style="padding:20px">
+    <p style="margin:10px; color: rgb(5, 121, 199);">Si desea enviarnos alguna noticia o evento, puede hacerlo de la siguiente forma:
+    <br><br>Llámenos al <strong><a href="tel:8095347773">809-534-7773</a></strong>.
+    <br><br>Escríbanos a cualquiera de estos correos:
+    <br><a href="mailto:resumendesalud@gmail.com">resumendesalud@gmail.com</a>
+    <br><a href="mailto:pedroangel@agenciatex.com">pedroangel@agenciatex.com</a>
+    <br><a href="mailto:prensapedroangel@gmail.com">prensapedroangel@gmail.com</a>
+    
+    </p>
+       
+    </div><!-- /popup enviar-noticia -->
+    <div data-role="popup" id="sugerencia" class="ui-content" style="padding:20px">
+    <p style="margin:10px; color: rgb(5, 121, 199);">Si desea enviarnos alguna sugerencia, puede hacerlo de la siguiente forma:
+    <br><br>Llámenos al <strong><a href="tel:8095347773">809-534-7773</a></strong>.
+    <br><br>Escríbanos a cualquiera de estos correos:
+    <br><a href="mailto:resumendesalud@gmail.com">resumendesalud@gmail.com</a>
+    <br><a href="mailto:pedroangel@agenciatex.com">pedroangel@agenciatex.com</a>
+    <br><a href="mailto:prensapedroangel@gmail.com">prensapedroangel@gmail.com</a>
+    
+    </p>
+       
+    </div><!-- /popup sugerencia -->
+</div><!-- /page -->
+<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.resumendesalud" version="1.1.5">
+  <name>Resumen de Salud</name>
+  <description>Nuestra aplicación de Resumen de Salud te permite estar al tanto de todo lo que sucede en la industria Farma-Salud. Noticias, eventos, descubrimientos científicos, nuevos medicamentos, sociales. Si eres profesional de la salud debes tener este app en tu dispositivo para estar informado.
+Que podrás hacer con el App:
+●	Ver el Resumen de Salud del dia
+●	Enterarte de los eventos médicos
+●	Ver eventos ya realizados
+●	Suscribirte a nuestro boletín
+●	Recomendar a tus amigos
+●	Tener nuestro Calendario Farma-Salud actualizado
+●	Seguirnos en las redes sociales
+●	Enviar noticias y sugerencias
+En que consiste nuestro medio multi-medio Resumen de Salud
+Nuestro Resumen tiene un enfoque empresarial y farmacéutico, por lo que las informaciones principales provienen del mercado farmacéutico, laboratorios, investigaciones sobre medicamentos, clínicas., ARS. Difunde actividades médicos-científicas de sociedades médicas y médicos, así como informaciones sobre medicamentos, estudios, equipos, servicios de farmacéuticas y dominicanas y multinacionales con representación en República Dominicana, y disposiciones oficiales sobre el sector.
+Es un concepto multimedios generado por un boletín enviado antes 7:00 am con informaciones publicadas por la prensa nacional y las que cubrimos de actores del sector; un portal dinamizado el día entero y redes sociales actualizadas durante todo el día los 7 días a la semana.
+Características del multimedio
+●	Informaciones son breves, lo que permite fácil y ágil lectura desde PC o móviles.
+●	Boletín elaborado todos los días desde las 5:00am y llega a los correos antes de 7:00am.
+●	Cantidad de informaciones enviadas por correo es limitada, lo que permite concentrar informaciones importantes en poco espacio con fácil lectura.
+●	Reproducimos información generada por el sector farmacéutico y médico de Rep. Dominicana. Esto permite enterarnos de informaciones no difundidas por la prensa nacional sobre los temas específicos de sector farma-salud.
+●	Se actualiza todo el día en su website y por las redes sociales, con informaciones dirigidas al público objetivo, los 7 días a la semana.
+●	Es la herramienta informativa digital de salud más actualizada del país.
+●	Llega al público que le interesa.
+Público Objetivo
+●	Sociedades médicas especializadas
+●	Médicos
+●	Laboratorios y farmacéuticas
+●	Suplidores de equipos médicos
+●	Proveedores de servicios de salud
+●	ARS
+●	Clínicas
+●	Hospitales
+●	Odontologos
+●	Enfermeras
+●	Bioanalístas
+●	Instituciones oficiales de salud
+●	Gremios de salud
+●	Otros de la industria Farma-Salud</description>
+  <author href="http://paradigmstg.com" email="mardwintrader@gmail.com">Edwin De Leon</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="phonegap-version" value="3.6.3"/>
+  <preference name="orientation" value="default"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="7"/>
+  <preference name="android-installLocation" value="auto"/>
+  <gap:plugin name="org.apache.cordova.battery-status"/>
+  <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.media-capture"/>
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.contacts"/>
+  <gap:plugin name="org.apache.cordova.device"/>
+  <gap:plugin name="org.apache.cordova.device-motion"/>
+  <gap:plugin name="org.apache.cordova.device-orientation"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
+  <gap:plugin name="org.apache.cordova.file"/>
+  <gap:plugin name="org.apache.cordova.file-transfer"/>
+  <gap:plugin name="org.apache.cordova.geolocation"/>
+  <gap:plugin name="org.apache.cordova.globalization"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+  <gap:plugin name="org.apache.cordova.media"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.vibration"/>
+  <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
+<feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+</feature>
+  <icon src="icon.png"/>
+  <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+  <icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+  <icon src="www/res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+  <icon src="www/res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
+  <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
+  <icon src="www/res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="www/res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="www/res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
+  <icon src="www/res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
+  <icon src="www/res/icon/webos/icon-64.png" gap:platform="webos"/>
+  <icon src="www/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
+  <icon src="www/res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
+  <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <gap:splash src="www/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
+  <gap:splash src="www/res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="www/res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
+  <gap:splash src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="www/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+  <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
+  <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+  <access origin="*"/>
+</widget>
