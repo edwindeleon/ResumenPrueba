@@ -25,38 +25,18 @@
   success: function() {}
 
 });
-//$("#contenido-boletin").load('http://www.resumendesalud.com/do/norte/index.php/boletin-resumen-de-salud-app');
+$("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app');
 
   });
-           $(document).ready(function(){
-               $("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
-               $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
- $("#precarga").hide();
-});
-                     
-               
-          });
-
-
+   			//Esta es otra forma las proximas 6 lineas
+           //$(document).ready(function(){
+            	//$("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
+            	//$("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
+ 				//$("#precarga").hide();
+				//});            
+             //});
         </script>
-         <script language="JavaScript" type="text/JavaScript">
-     $(document).ready(function(){
-$('a').live('tap',function(e){
-    // if external link then open a browser
-    if(String($(this).attr('href')).substring(0,4)=='http' || String($(this).attr('href')).substring(0,5)=='https'){
-        navigator.app.loadUrl($(this).attr('href'), { openExternal:true });
-        e.stopPropagation();
-        return false;
-    }
-});
- function loadURL(url){
-    navigator.app.loadUrl(url, { openExternal:true });
-    return false;
-  });
-         
 
-
-        </script>
 </head>
 <body>
 
