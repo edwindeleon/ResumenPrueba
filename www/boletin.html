@@ -28,14 +28,14 @@
 //$("#contenido-boletin").load('http://www.resumendesalud.com/do/norte/index.php/boletin-resumen-de-salud-app');
 
   });
-           // $(document).ready(function(){
-            //    $("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
-            //    $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
- // $("#precarga").hide();
-//});
+           $(document).ready(function(){
+               $("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
+               $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
+ $("#precarga").hide();
+});
                      
                
-         //   });
+          });
 
 
         </script>
@@ -68,9 +68,9 @@ $('a').live('tap',function(e){
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-    <a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_system', 'location=no');">enlace 1 a ver</a>
+    <!--<a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_system', 'location=no');">con este me abre navegador chrome</a> 
     <br>
-    <a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_blank', 'location=no');">enlace 2 a ver</a>
+    <a href="#" onclick="window.open('http://www.resumendesalud.com/do/norte/index.php/categoria-cirugia/9833-hospital-general-de-la-plaza-de-la-salud-da-alta-medica-paciente-sometida-a-doble-trasplante', '_blank', 'location=no');">con este me abre el navegador por defecto del sistema</a>-->
         <div id="precarga"><img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido</div>
 		<div id="contenido-boletin">
         <!-- <iframe class="el-frame" src="http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app"></iframe> -->
