@@ -12,7 +12,17 @@
     <script src="js/jquery.mobile-1.4.3.min.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
-    
+   <style type="text/css">
+    .ui-mobile, .ui-mobile body {
+    background: #0061A0;
+    }
+    .ui-content {
+
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    background: #0061A0;
+    }
+   </style> 
 </head>
 <body>
 
@@ -24,10 +34,10 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-    
+        
         <div id="redes">
             <div class="info">
-
+                <p align="center" style="color: #fff;">Síguenos en las redes para que estés al tanto de todo nuestro contenido.</p>
                 <a href="#" onclick="window.open('https://www.facebook.com/ResumenDeSaludDo?ref=ts&fref=ts', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-fb.jpg" width="64" height="63" alt=""></a>
                 <a href="#" onclick="window.open('https://twitter.com/ResumendeSalud', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-tw.jpg" width="64" height="63" alt=""></a>
                 <a href="#" onclick="window.open('http://www.linkedin.com/company/5018984?trk=tyah&trkInfo=tas%3Aresumen%20de%20s%2Cidx%3A1-1-1', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-in.jpg" width="64" height="63" alt=""></a>
