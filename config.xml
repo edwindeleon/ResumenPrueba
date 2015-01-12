@@ -90,7 +90,7 @@ Esta Aplicación ha sido desarrollada por Edwin De León, Twitter: https://twitt
   <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
   <icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
   <preference name="SplashScreen" value="foo" />
-  <preference name="SplashScreenDelay" value="10000" />
+  <preference name="SplashScreenDelay" value="1000" />
     <platform name="android">
 	   <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
 	   <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
