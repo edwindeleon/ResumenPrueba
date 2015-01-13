@@ -13,6 +13,10 @@
     <script src="js/custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
    <style type="text/css">
+   .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+        background-color: #0061A0 !important;
+        
+        }
     .ui-mobile, .ui-mobile body {
     background: #0061A0;
     }
@@ -23,8 +27,24 @@
     background: #0061A0;
     }
    </style> 
+   <script language="JavaScript" type="text/JavaScript">
+       $(document).ready(function(){
+               jQuery.ajaxSetup({
+      beforeSend: function() {
+         $('#precarga').show();
+      },
+      complete: function(){
+         $('#precarga').hide();
+      },
+      success: function() {}
+
+    });
+    $("#contenido-recomiendanos").load('http://www.resumendesalud.com/do/socialred/resumendesalud/recomiendanos-app.php');
+
+      });
+</script>
 </head>
-<body>
+<body bgcolor="#0061A0">
 
 <div data-role="page" id="siguenos" data-url="siguenos">
 
@@ -35,16 +55,10 @@
 
 	<div role="main" class="ui-content">
         
-        <div id="redes">
-            <div class="info">
-                <p class="titulos-pers" align="center" style="color: #fff;">Síguenos en las redes para que estés al tanto de todo nuestro contenido.</p>
-                <a href="#" onclick="window.open('https://www.facebook.com/ResumenDeSaludDo?ref=ts&fref=ts', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-fb.jpg" width="64" height="63" alt=""></a>
-                <a href="#" onclick="window.open('https://twitter.com/ResumendeSalud', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-tw.jpg" width="64" height="63" alt=""></a>
-                <a href="#" onclick="window.open('http://www.linkedin.com/company/5018984?trk=tyah&trkInfo=tas%3Aresumen%20de%20s%2Cidx%3A1-1-1', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-in.jpg" width="64" height="63" alt=""></a>
-                <a href="#" onclick="window.open('https://plus.google.com/u/0/105322601350047543232/posts', '_system', 'location=no');"><img src="http://www.resumendesalud.com/do/templates/resumendesalud2-boletin/images/icon-g.jpg" width="64" height="63" alt=""></a>
-
-            </div>
-    </div><!-- /redes -->
+        <div id="precarga" style="color:#fff;"><img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido</div>
+        <div id="contenido-recomiendanos">
+        </div>
+    
 	</div><!-- /content -->
 <!-- /panel -->
     <div data-role="panel" id="right-panel" data-display="push" data-position="right">
@@ -82,39 +96,7 @@
                     </div>          
     </div><!-- /panel -->
 
-    <div data-role="popup" id="recomiendanos" class="ui-content" style="max-width:85%; padding:20px">
-    <script language="JavaScript" type="text/JavaScript">
-            $(document).ready(function(){
-                
-                     $("#contenido-recomiendanos").load('http://www.resumendesalud.com/do/socialred/resumendesalud/recomiendanos.php');
-               
-            });
-        </script>
-        <div id="contenido-recomiendanos">
-        </div>
-    </div><!-- /popup recomiendanos -->
-        <div data-role="popup" id="enviar-noticia" class="ui-content" style="padding:20px">
-    <p style="margin:10px; color: rgb(5, 121, 199);">Si desea enviarnos alguna noticia o evento, puede hacerlo de la siguiente forma:
-    <br><br>Llámenos al <strong><a href="tel:8095347773">809-534-7773</a></strong>.
-    <br><br>Escríbanos a cualquiera de estos correos:
-    <br><a href="mailto:resumendesalud@gmail.com">resumendesalud@gmail.com</a>
-    <br><a href="mailto:pedroangel@agenciatex.com">pedroangel@agenciatex.com</a>
-    <br><a href="mailto:prensapedroangel@gmail.com">prensapedroangel@gmail.com</a>
     
-    </p>
-       
-    </div><!-- /popup enviar-noticia -->
-    <div data-role="popup" id="sugerencia" class="ui-content" style="padding:20px">
-    <p style="margin:10px; color: rgb(5, 121, 199);">Si desea enviarnos alguna sugerencia, puede hacerlo de la siguiente forma:
-    <br><br>Llámenos al <strong><a href="tel:8095347773">809-534-7773</a></strong>.
-    <br><br>Escríbanos a cualquiera de estos correos:
-    <br><a href="mailto:resumendesalud@gmail.com">resumendesalud@gmail.com</a>
-    <br><a href="mailto:pedroangel@agenciatex.com">pedroangel@agenciatex.com</a>
-    <br><a href="mailto:prensapedroangel@gmail.com">prensapedroangel@gmail.com</a>
-    
-    </p>
-       
-    </div><!-- /popup sugerencia -->
 </div><!-- /page -->
 <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

@@ -13,29 +13,29 @@
     <script src="js/custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
     
-    <script language="JavaScript" type="text/JavaScript">
-   $(document).ready(function(){
-           jQuery.ajaxSetup({
-  beforeSend: function() {
-     $('#precarga').show();
-  },
-  complete: function(){
-     $('#precarga').hide();
-  },
-  success: function() {}
+<script language="JavaScript" type="text/JavaScript">
+       $(document).ready(function(){
+               jQuery.ajaxSetup({
+      beforeSend: function() {
+         $('#precarga').show();
+      },
+      complete: function(){
+         $('#precarga').hide();
+      },
+      success: function() {}
 
-});
-$("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app');
+    });
+    $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app');
 
-  });
-   			//Esta es otra forma las proximas 6 lineas
-           //$(document).ready(function(){
-            	//$("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
-            	//$("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
- 				//$("#precarga").hide();
-				//});            
-             //});
-        </script>
+      });
+       			//Esta es otra forma las proximas 6 lineas
+               //$(document).ready(function(){
+                	//$("#precarga").html('<img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido');
+                	//$("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/boletin-resumen-de-salud-app', null, function() {
+     				//$("#precarga").hide();
+    				//});            
+                 //});
+</script>
 
 </head>
 <body>

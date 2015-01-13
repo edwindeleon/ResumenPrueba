@@ -55,7 +55,7 @@ background: #ACACAC;
 opacity: 0.4;
 filter: alpha(opacity=40);
 }
-.ui-panel-animate.ui-panel-page-content-position-right p{
+.ui-panel-animate.ui-panel-page-content-position-right p, .ui-panel-animate.ui-panel-page-content-position-right h1, .ui-panel-animate.ui-panel-page-content-position-right .signupframe{
 opacity: 0.25;
 filter: alpha(opacity=25);
 }
@@ -492,5 +492,8 @@ padding-top: 14px;
 	margin: 0 auto;
 	padding-top: 150px;
 }
-
-
+.titulos-pers{
+	color: #fff !important;
+	opacity: 0.8 !important;
+	filter: alpha(opacity=80) !important;
+}
