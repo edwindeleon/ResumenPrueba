@@ -8,32 +8,25 @@
 	
 	<link href="css/jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css">
     <link href="css/edgstyle.css" rel="stylesheet" type="text/css">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.3.min.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
-           
-   <script language="JavaScript" type="text/JavaScript">
-       $(document).ready(function(){
-               jQuery.ajaxSetup({
-      beforeSend: function() {
-         $('#precarga').show();
-      },
-      complete: function(){
-         $('#precarga').hide();
-      },
-      success: function() {}
+   <style type="text/css">
+    .ui-mobile, .ui-mobile body {
+    background: #0061A0;
+    }
+    .ui-content {
 
-    });
-    $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/eventos-realizados-app');
-
-      });
-                
-</script>     
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    background: #0061A0;
+    }
+   </style> 
 </head>
 <body>
 
-<div data-role="page" id="boletin" data-url="boletin">
+<div data-role="page" id="siguenos" data-url="siguenos">
 
 	<div data-role="header">
 		<h1><div><img class="el-logo" src="images/logo.svg" width="121" height="36" alt="Resumen de Salud"></div>    
@@ -41,13 +34,34 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-    <div id="precarga"><img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido</div>
         
-		<div id="contenido-boletin">
-        </div>   
+        <div align="center">
+        <p class="titulos-pers" style="margin:10px;">Si desea hacernos alguna sugerencia, puede hacerlo de la siguiente forma:
+    <br><br>Llámenos al <strong><a class="titulos-pers" href="tel:8095347773">809-534-7773</a></strong>.
+    <br><br>O llene el siguiente formulario:</p><br>
+            <div class="formulario">
+                  <form data-ajax="false" method="post" action="http://www.resumendesalud.com/app_resumen_de_salud/enviar.php">
+                      <label for="text-basic">Nombre:</label>
+                      <input type="text" name="nombre" id="nombre" required value="">
+                      <label for="text-basic">Apellidos:</label>
+                      <input type="text" name="apellidos" id="apellidos" required value="">
+           <label for="text-basic">Email:</label>
+                      <input type="text" name="email" id="email" type="email" required value="">
+                      <label for="text-basic">Teléfono:</label>
+                      <input type="text" name="telefono" id="telefono" required value="">
+                      <label for="textarea">Comentarios:</label>
+            <textarea cols="40" rows="8" name="comentarios" id="comentarios"></textarea>
+                      <div class="enviar">
+     <button type="submit" class="ui-btn ui-btn-c mi-boton2 ui-corner-none">Enviar</button>
+     </div>
+    </form>
+    </div>
+    
+
+    </div>
 	</div><!-- /content -->
 <!-- /panel -->
-    <div data-role="panel" id="right-panel" data-display="push" data-position="right">
+   <div data-role="panel" id="right-panel" data-display="push" data-position="right">
        <div class="bloques2">
                          <div class="bloque21">
                          <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="boletin.html" rel="external"><img src="images/resumen-de-hoy.png"> </a>
@@ -81,6 +95,7 @@
                          </div>
                     </div>          
     </div><!-- /panel -->
+
     
 </div><!-- /page -->
 <script type="text/javascript" src="cordova.js"></script>

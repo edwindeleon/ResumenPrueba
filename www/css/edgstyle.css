@@ -497,3 +497,15 @@ padding-top: 14px;
 	opacity: 0.8 !important;
 	filter: alpha(opacity=80) !important;
 }
+.formulario{
+	width: 94%;
+}
+.formulario label{
+	color: #fff !important;
+	opacity: 0.8 !important;
+	filter: alpha(opacity=80) !important;
+}
+.ui-corner-all {
+-webkit-border-radius: 0px !important;
+border-radius: 0px !important;
+}
