@@ -59,6 +59,9 @@ filter: alpha(opacity=40);
 opacity: 0.25;
 filter: alpha(opacity=25);
 }
+.ui-panel-animate.ui-panel-page-content-position-right .ui-content{
+	height: 875px;
+}
 .ui-panel-inner {
 padding: 0px !important;
 }
