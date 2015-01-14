@@ -11,44 +11,26 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.3.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+
+function limpia()
+
+{
+document.form.submit();
+document.form.nombre.value = " ";
+document.form.nombre.focus();
+document.form.apellidos.value = " ";
+document.form.apellidos.focus();
+document.form.email.value = " ";
+document.form.email.focus();
+document.form.telefono.value = " ";
+document.form.telefono.focus();
+document.form.comentarios.value = " ";
+document.form.comentarios.focus();
+}
+
+</script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
-    <script type="text/javascript" charset="utf-8">
-
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Empty
-    }
-
-    // alert dialog dismissed
-        function alertDismissed() {
-            // do something
-        }
-
-    // Show a custom alertDismissed
-    //
-    function showAlert() {
-        navigator.notification.alert(
-            'Mensaje enviado',  // message
-            alertDismissed,         // callback
-            'Confirmación',            // title
-            'Aceptar'                  // buttonName
-        );
-    }
-     function showAlert2() {
-        navigator.notification.alert(
-            'Mensaje no enviado\nvuelva a intentarlo',  // message
-            alertDismissed,         // callback
-            'Error',            // title
-            'Aceptar'                  // buttonName
-        );
-    }
-
-    </script>
    <style type="text/css">
     .ui-mobile, .ui-mobile body {
     background: #0061A0;
@@ -80,7 +62,7 @@
     <br><br>Llámenos al <strong><a class="titulos-pers" href="tel:8095347773">809-534-7773</a></strong>.
     <br><br>O llene el siguiente formulario:</p><br>
             <div class="formulario">
-                  <form data-ajax="false" method="post" action="http://www.resumendesalud.com/app_resumen_de_salud/enviar.php">
+                  <form name="form" data-ajax="false" method="post" action="http://www.resumendesalud.com/app_resumen_de_salud/enviar.php"  onsubmit=limpia();>
                       <label for="text-basic">Nombre:</label>
                       <input type="text" name="nombre" id="nombre" required value="">
                       <label for="text-basic">Apellidos:</label>

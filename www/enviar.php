@@ -1,40 +1,3 @@
-<script type="text/javascript" charset="utf-8">
-
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Empty
-    }
-
-    // alert dialog dismissed
-        function alertDismissed() {
-            // do something
-        }
-
-    // Show a custom alertDismissed
-    //
-    function showAlert() {
-        navigator.notification.alert(
-            'Mensaje enviado',  // message
-            alertDismissed,         // callback
-            'Confirmación',            // title
-            'Aceptar'                  // buttonName
-        );
-    }
-     function showAlert2() {
-        navigator.notification.alert(
-            'Mensaje no enviado\nvuelva a intentarlo',  // message
-            alertDismissed,         // callback
-            'Error',            // title
-            'Aceptar'                  // buttonName
-        );
-    }
-
-    </script>
 <?php
 /* Este archivo lo he subido al server de resumen de salud, esta en http://www.resumendesalud.com/app_resumen_de_salud */
 
@@ -85,7 +48,9 @@ Mensaje desde la Aplicación Móvil de Resumen de Salud:
       //Header ("Location: http://hodelpa.com/es/mobile/gracias.html"); 
     ?>
     <script type="text/javascript">
-     showAlert(); return false;
+      alert("Mensaje enviado");
+      window.history.back();
+      return false;
     </script>
     <?php
   }
@@ -93,7 +58,9 @@ else
 {
 	 ?>
     <script type="text/javascript">
-     showAlert(); return false;
+      alert("Mensaje no enviado\nvuelva a intentarlo.");
+      window.history.back();
+      return false;
     </script>
     <?php
 }
