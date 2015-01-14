@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.resumendesalud" version="1.1.5">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.resumendesalud" versionCode="120" version="1.1.5">
   <name>Resumen de Salud</name>
   <description>Nuestra aplicación de Resumen de Salud te permite estar al tanto de todo lo que sucede en la industria Farma-Salud. Noticias, eventos, descubrimientos científicos, nuevos medicamentos, sociales. Si eres profesional de la salud debes tener este app en tu dispositivo para estar informado.
 Que podrás hacer con el App:
