@@ -49,7 +49,7 @@ Mensaje desde la Aplicación Móvil de Resumen de Salud:
     ?>
     <script type="text/javascript">
       alert("Mensaje enviado");
-      window.history.back();
+      window.history.go(-2);
       return false;
     </script>
     <?php
@@ -59,7 +59,7 @@ else
 	 ?>
     <script type="text/javascript">
       alert("Mensaje no enviado\nvuelva a intentarlo.");
-      window.history.back();
+      window.history.go(-2);
       return false;
     </script>
     <?php
