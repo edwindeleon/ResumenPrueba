@@ -8,13 +8,13 @@
 	
 	<link href="css/jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css">
     <link href="css/edgstyle.css" rel="stylesheet" type="text/css">
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.3.min.js"></script>
     <script src="js/custom.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script> 
            
    <script language="JavaScript" type="text/JavaScript">
-      /* $(document).ready(function(){
+       $(document).ready(function(){
                jQuery.ajaxSetup({
       beforeSend: function() {
          $('#precarga').show();
@@ -27,7 +27,7 @@
     });
     $("#contenido-boletin").load('http://www.resumendesalud.com/do/index.php/proximos-eventos-app');
 
-      }); */
+      });
                 
 </script>     
           
@@ -42,10 +42,9 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-     
+     <div id="precarga"><img style="width:60px; height:60px;margin-left:50px;float:left;" src="images/preloader.gif" alt="Cargando Contenido" /><br>Cargando Contenido</div>
      
 		<div id="contenido-boletin">
-    <iframe scrolling="no" frameBorder="0" class="el-frame" src="http://www.resumendesalud.com/do/index.php/proximos-eventos-app"></iframe>
         </div>   
 	</div><!-- /content -->
 <!-- /panel -->
