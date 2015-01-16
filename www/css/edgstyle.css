@@ -22,8 +22,9 @@
 	background-color: transparent;
 }
 .el-frame{
-	height: 800px;
+	height: 1024px;
 	width: 100%;
+	max-width: 768px;
 }
 .el-logo{
 	float:left;margin-top: -2px; margin-bottom:-3px
