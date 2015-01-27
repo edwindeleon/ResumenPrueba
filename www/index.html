@@ -25,20 +25,6 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
-    <div class="app"> 
-            <h1>Registro</h1> 
-            <form id="formulario" name="formulario" method="post" action="http://resumendesalud.com/app_resumen_de_salud/notificaciones_app_resumen/registro.php"> 
-                <p><input type="text" id="name" name="name" placeholder="Nombre" required></p> 
-                <p><input type="text" id="email" name="email" placeholder="Correo" required></p> 
-                <p><input type="text" name="regId" id="regId" readonly="readonly" placeholder="regId"></p> 
-                <button type="button" onclick="registrar();">Registar</button> 
-            </form>   
-
-            <div id="deviceready" class="blink"> 
-                <p class="event listening">Connecting to Device</p> 
-                <p class="event received">Device is Ready</p> 
-            </div>   
-        </div> 
 		<div class="bloques" align="center">
                          <div class="bloque1">
                          <a class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="Cargando" data-inline="true" href="boletin.html" rel="external"><img src="images/resumen-de-hoy.png"> </a>
@@ -76,26 +62,10 @@
    
 </div><!-- /page -->
 </div>
-        <script type="text/javascript" src="cordova.js"></script>
-
-        <script type="text/javascript" src="PushNotification.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-            function registrar(){ 
-            var nombre = document.getElementById('name').value; 
-            var email = document.getElementById('email').value; 
-            var regId = document.getElementById('regId').value; 
-            if (regId != "") { 
-                if (nombre != "" && email != "") { 
-                    //Enviamos los datos al servidor php 
-                    document.formulario.submit(); 
-                } 
-                else{alert('Ingrese un nombre y un correo para el registro en la base de datos.')} 
-            } 
-            else 
-                {alert('Esperando el regId del registro en GCM!');} 
-        } 
         </script>
 </body>
 </html>
