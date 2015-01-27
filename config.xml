@@ -69,6 +69,7 @@ Esta Aplicación ha sido desarrollada por Edwin De León, Twitter: https://twitt
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
+  <gap:plugin name="com.phonegap.plugins.pushplugin"/>
   <feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
 </feature>
